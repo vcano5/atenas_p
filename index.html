@@ -288,10 +288,7 @@
        $.ajax({
           url: 'https://atenasv5.herokuapp.com/ping',
 	       dataType: 'jsonp',
-          success: 
-            
-	    location.href = 'https://atenasv5.herokuapp.com/aa'
-          ,     
+          success: location.href = 'https://atenasv5.herokuapp.com/aa',     
           error: function(result){
               alert('timeout/error');
           }
@@ -299,17 +296,6 @@
     }
 
     ping()
-
-
-	var delay = ( function() {
-	    var timer = 0;
-	    return function(callback, ms) {
-	        clearTimeout (timer);
-	        timer = setTimeout(callback, ms);
-	    };
-	})();
-
-	 // end delay
 </script>
 
 </body>
