@@ -287,6 +287,7 @@
 	function ping(){
        $.ajax({
           url: 'https://atenasv5.herokuapp.com/ping',
+	       dataType: 'jsonp',
           success: function(result){
             delay(function(){
 	    location.href = 'https://atenasv5.herokuapp.com/aa'
