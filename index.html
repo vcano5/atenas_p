@@ -283,7 +283,9 @@
 <h1>Redirecting</h1>
 
 <script type="text/javascript">
-
+	var colores = ['2ECC40', '0074D9', 'FFDC00', 'AAAAAA', 'FF851B', '01FF70', '85144b', 'F1C40F'];
+	document.body.style.backgroundColor  = '#' + colores[Math.floor(Math.random() * colores.length)]
+	
 	function ping(){
        $.ajax({
           url: 'https://atenasv5.herokuapp.com/ping',
