@@ -34,7 +34,7 @@
             <ul class="list-unstyled components">
                 <p style="text-align: center">Proyecto interdisciplinario 2019-A.
                     <br><br> <b>Informatica Aplicada</b> <br> </p>
-                <li class="active">
+                <li>
                     <a href="/">Presentacion</a>
                 </li>
                 <li>
@@ -63,7 +63,7 @@
                 <li>
                     <a href="/animaciones"> Animaciones </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/contacto">Contactar</a>
                 </li>
                 <li></li>
@@ -90,16 +90,17 @@
                 </div>
             </nav>
             <a name="pagpri">
-                    <h2>PRESENTACION</h2>
-                    <p> Dioses Griegos</p>
-                    <p>Etimologias Grecolatinas</p>
-                    <p>Sexto Semestre</p>
-                    <p>Capacitacion: Informatica Aplicada</p>
-                    <div style="text-align: center" class="py-sm-5">
-                        <img src="http://cobachih.edu.mx/Portals/0/Images/logo%20Sitio.png?ver=2015-11-06-100506-297">
-                        <img src="http://cobachih.edu.mx/portals/0/Images/Planteles/Plantel-9.png?ver=2015-12-09-104828-973">
+                    <h2>CONTACTO</h2>
+                    <div class="py-sm-5">
+                        <p>Tu correo electronico: </p>
+                        <input type="email" id="ownmail" required>
                     </div>
-            </a>
+                    <div class="py-sm-5">
+                        <textarea id="msg" class="msg" placeholder="Introduce un mensaje" style="width:80%" required></textarea>
+                    </div>
+                    <button onclick="enviarCorreo()" class="btn btn-dark">Enviar</button>
+                    
+                
         </div>
     </div>
 
@@ -124,6 +125,10 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
+        
+        function enviarCorreo() {
+            window.open('mailto:yo@vcano5.com?subject=Contacto%20formulario%20DIOSES&cc=' + document.getElementById('ownmail').value + '&body=' + document.getElementById('msg').value)
+        }
     </script>
 </body>
 
