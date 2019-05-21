@@ -58,7 +58,6 @@
         }
 
         #sidebar {
-            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
@@ -67,10 +66,6 @@
             background: #bd5d38;
             color: #fff;
             transition: all 0.3s;
-        }
-
-        #sidebar.active {
-            margin-left: -250px;
         }
 
         #sidebar .sidebar-header {
