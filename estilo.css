@@ -140,7 +140,7 @@
         ----------------------------------------------------- */
 
         #content {
-            width: calc(100% - 250px);
+            width: 100%;
             padding: 40px;
             min-height: 100vh;
             transition: all 0.3s;
