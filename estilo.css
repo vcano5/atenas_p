@@ -4,6 +4,10 @@
             background: #fafafa;
         }
 
+a{
+        color: #fff;
+        text-align: left;
+}
         p {
             font-family: 'Poppins', sans-serif;
             font-size: 1.1em;
