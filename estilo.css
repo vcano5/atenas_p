@@ -167,9 +167,7 @@ a{
             #content {
                 width: 100%;
             }
-            #content.active {
-                width: calc(100% - 250px);
-            }
+            
             #sidebarCollapse span {
                 display: none;
             }

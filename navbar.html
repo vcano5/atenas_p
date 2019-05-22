@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous" type="1d93df74354227e30185b233-text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<title>DIOSES - Presentacion</title>
+
+<style type="text/css">
+<!--
+
+
+.active {
+    background-color: #f4f;
+    margin: 4px;
+}
+
+a {
+    color: #ffff;
+}
+body {
+    background-color: #bd5d38;
+}
+
+    #sidebar ul.components {
+            padding: 20px 0;
+            border-bottom: 1px solid #bd5d38;
+        }
+
+        #sidebar ul p {
+            color: #fff;
+            padding: 10px;
+        }
+
+        #sidebar ul li a {
+            padding: 10px;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        #sidebar ul li a:hover {
+            color: #000;
+            background: #fff;
+        }
+
+        #sidebar ul li.active>a,
+        a[aria-expanded="true"] {
+            color: #fff;
+            background: #7E3F26;
+        }
+
+        a[data-toggle="collapse"] {
+            position: relative;
+        }
+
+        .dropdown-toggle::after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        ul ul a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #bd5d38;
+        }
+
+        ul.CTAs {
+            padding: 20px;
+        }
+
+        ul.CTAs a {
+            text-align: center;
+            font-size: 0.9em !important;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        a.article,
+        a.article:hover {
+            background: #5B2D1B !important;
+            color: #fff !important;
+        }
+-->
+</style></head>
+
+<body>
+<nav id="sidebar">
+<div class="sidebar-header" style="text-align: center; backgrond: #bd5d38">
+<img src="https://atenas-v5.herokuapp.com/static/?file=zeuslogo.gif" height="80%" width="80%">
+<h3>DIOSES</h3>
+</div>
+<ul class="list-unstyled components">
+<p style="text-align: center">Proyecto interdisciplinario 2019-A.
+<br><br> <b>Informatica Aplicada</b> <br> </p>
+<li class="active navegacion" id="presentacion">
+<a href="https://https://dioses.vcano5.com/" target="mainFrame">Presentacion</a>
+</li>
+<li class="navegacion" id="proposito">
+<a href="https://dioses.vcano5.com/proposito" target="mainFrame">Proposito</a>
+</li>
+<li class="navegacion" id="impacto">
+<a href="https://dioses.vcano5.com/impacto" target="mainFrame"> Impacto</a>
+</li>
+<li class="navegacion" id="gpri gform gdios">
+<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Galeria</a>
+<ul class="collapse list-unstyled" id="homeSubmenu">
+<li class="navegacion" id="gpri">
+<a href="https://dioses.vcano5.com/galeria#pagpri"  target="mainFrame">Pagina principal</a>
+</li>
+<li class="navegacion" id="gform">
+<a href="https://dioses.vcano5.com/galeria#form" target="mainFrame">Formulario</a>
+</li>
+<li class="navegacion" id="gdios">
+<a href="https://dioses.vcano5.com/galeria#pdios" target="mainFrame">Pagina Dios</a>
+</li>
+<li class="navegacion" id="modificar">
+<a href="https://dioses.vcano5.com/galeria#moddios" target="mainFrame">Modificar Dios</a>
+</li>
+</ul>
+</li>
+<li class="navegacion" id="animaciones">
+<a href="https://dioses.vcano5.com/animaciones" target="mainFrame"> Animaciones </a>
+</li>
+<li class="navegacion" id="contactar">
+<a href="https://dioses.vcano5.com/contacto" target="mainFrame">Contactar</a>
+</li>
+<li class="navegacion" id="conclusion">
+    <a href="https://dioses.vcano5.com/conclusion" target="mainFrame"> Conclusión </a></li>
+</ul>
+<ul class="list-unstyled CTAs">
+<li class="navegacion">
+<a href="https://etimologias.vcano5.com/" class="article">Visitar página</a>
+</li>
+</ul>
+    </nav>
+</body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('li').on('click', function(e) {
+                var clickedID = $(this).attr('id');
+                //alert('a: ' + clickedID);
+                console.log(e)
+                document.getElementsByClassName('active')[0].classList.remove('active');
+                document.getElementById(clickedID).classList.add('active')
+
+            });
+        });
+    </script>
+</html>
