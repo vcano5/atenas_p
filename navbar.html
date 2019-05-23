@@ -140,9 +140,14 @@ body {
 <a href="https://etimologias.vcano5.com/" class="article" target="mainFrame">Visitar página</a>
 </li>
 </ul>
+    <marquee id="marquee-fecha"> </marquee>
     </nav>
 </body>
     <script type="text/javascript">
+        var f = new Date();
+        var c = f.getDate() + '/' + (f.getMonth()+1) + '/' + f.getFullYear();
+        document.getElementById('marquee-fecha').innerHTML = c;
+        
         $(document).ready(function () {
 
             $('#sidebarCollapse').on('click', function () {
