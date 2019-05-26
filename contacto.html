@@ -18,6 +18,11 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <style type="text/css">
+        th, td {
+  padding: 15px;
+}
+    </style>
 </head>
 
 <body>
@@ -27,18 +32,28 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <a name="pagpri">
-                    <h2>CONTACTO</h2>
-                    <div class="py-sm-5">
-                        <p>Tu correo electronico: </p>
-                        <input type="email" id="ownmail" required>
-                    </div>
-                    <div class="py-sm-5">
-                        <textarea id="msg" class="msg" placeholder="Introduce un mensaje" style="width:80%" required></textarea>
-                    </div>
-                    <button onclick="enviarCorreo()" class="btn btn-dark">Enviar</button>
-                    
-                
+            <a name="contacto">
+                <h2>CONTACTO</h2>
+                <table width="100%">
+                    <tr>
+                        <td width="30%">
+                        <span>Tu correo electronico: </span>
+                        </td>
+                        <td>
+                            <input type="email" id="ownmail" required style="width: 100%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="msg" class="msg" placeholder="Introduce un mensaje" style="width: 100%" required></textarea>
+                        </td>
+                    </tr>
+                    <tr class="my-2">
+                        <td>
+                            <button onclick="enviarCorreo()" class="btn btn-dark">Enviar</button>
+                        </td>
+                    </tr>
+                </table>                 
         </div>
     </div>
 
